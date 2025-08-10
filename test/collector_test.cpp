@@ -39,7 +39,7 @@ void report()
     std::cout << "  " << static_cast<double>(t) / CLOCKS_PER_SEC << " seconds.\n";
 }
 
-void free()
+void dispose()
 {
     std::cout << "Calling free_unreachable_objects:\n";
 
@@ -94,6 +94,6 @@ int main()
     v1.clear();
     report();
 
-    free();
+    dispose();
     report();
 }
