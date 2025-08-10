@@ -515,7 +515,7 @@ public:
 
     template<class Y> void reset( Y * p ) // Y must be complete
     {
-        BOOST_ASSERT( p == 0 || p != px ); // catch self-reset errors
+        BOOST_ASSERT( p == nullptr || p != px ); // catch self-reset errors
         this_type( p ).swap( *this );
     }
 

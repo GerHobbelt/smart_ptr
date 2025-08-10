@@ -152,13 +152,13 @@ public:
 
     BOOST_SP_CXX20_CONSTEXPR T & operator*() const BOOST_SP_NOEXCEPT_WITH_ASSERT
     {
-        BOOST_ASSERT( px != 0 );
+        BOOST_ASSERT( px != nullptr );
         return *px;
     }
 
     BOOST_SP_CXX20_CONSTEXPR T * operator->() const BOOST_SP_NOEXCEPT_WITH_ASSERT
     {
-        BOOST_ASSERT( px != 0 );
+        BOOST_ASSERT( px != nullptr );
         return px;
     }
 
