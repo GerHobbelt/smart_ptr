@@ -37,7 +37,7 @@ protected:
         return *this;
     }
 
-    ~enable_shared_from_this() noexcept // ~weak_ptr<T> newer throws, so this call also must not throw
+    ~enable_shared_from_this() noexcept // ~weak_ptr<T> never throws, so this call also must not throw
     {
     }
 
